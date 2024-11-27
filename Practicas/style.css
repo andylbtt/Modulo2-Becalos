@@ -1,0 +1,71 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bandera{
+    width: 330px;
+    height: 220px;
+    display: flex;
+}
+
+.verde, .blanco, .rojo{
+    width: 110px;
+    height: 100px;
+}
+
+.verde{
+    background-color: green;
+}
+.blanco{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rojo{
+    background-color: red;
+}
+.escudo{
+    width: 105px;
+}
+
+.osito{
+    width: 200px;
+    height: 250px;
+    
+}
+.cabeza{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oreja{
+    width: 25px;
+    height: 30px;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+}
+.izquierda{
+    left: 10px;
+}
+.derecha{
+    right: 10px;
+}
+.cuerpo{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    border-radius: 50%;
+    left: 5px;
+}

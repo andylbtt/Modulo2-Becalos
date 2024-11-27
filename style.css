@@ -1,33 +1,77 @@
+/*Selector universal*/
 *{
-    padding: 0;
+    padding: 0; 
     margin: 0;
 }
 
-body    {background-color: aquamarine;}
-
-h1{
-    color: aliceblue;
+/*CSS que me dio Google Fonts*/
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
-/* Selector de tipo: Clase*/
-.tarjeta{
-    width: 320px;
-    background-color: antiquewhite;
+/*Selector de tipo: Etiqueta*/
+body{
+    background-color: rgb(60, 192, 221);
+    font-family: "Patrick Hand", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+main{
+    /*Ajustar las tarjetas a varias lineas*/
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    color:white;
+}
+/*Selector de tipo: Clase*/
+/*Reutilizar estilos*/
+.tarjeta {
+    width: 265px;
+    height: 515px;
+    background-color: rgb(215, 236, 250);
     border-radius: 3%;
+    /*Centrando elementos*/
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+    padding: 12px;
+    border: 3px solid black;
+    transition: all 0.4s ease-in-out; /*Transicion suave*/
 }
 
-.tarjeta .imagen{
-    width: auto;
-    height: 180px;
+.titulo-tarjeta{
+    margin-bottom: 10px;
 }
-
+/*Pseudoclase Hover para crear animaciones*/
+.tarjeta:hover{
+    background-color: rgb(190, 172, 247);
+    transform: scale(1.05);
+    transform: rotate(3deg);
+}
+.tarjeta .caja-contenedora{
+    width: 200px;
+}
 .tarjeta img{
-    width: 100%;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+    border-radius: 5%;
+}
+.tarjeta p{
+    font-size: 15px;
+}
+/*Selector de tipo: ID*/
+/*Es UNICO*/
+#gato{
+    color:rgb(51, 97, 152);
+}
+#perro{
+    color:blue;
 }
 
-.tarjeta p{
-    color: brown;
-    font-size: 20px;
-}
